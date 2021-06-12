@@ -39,7 +39,7 @@
     copy:
       src: /opt/nexus.service
       dest: /etc/systemd/system/
-      mode: 0755
+      mode: 0777
       remote_src: yes
   - name: just force systemd to reread configs (2.4 and above)
     systemd:
